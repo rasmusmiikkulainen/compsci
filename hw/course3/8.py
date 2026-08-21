@@ -12,3 +12,5 @@ vastaus = 1
 for i in range(a):
     vastaus *= b
 print(vastaus)
+
+# comment
