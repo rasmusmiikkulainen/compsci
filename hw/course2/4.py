@@ -1,7 +1,8 @@
 total = int(input("enter total: "))
 if total < 17:
-    print("hit")
-elif total in range(17, 22):
-    print("stay")
+    action = "hit"
 elif total > 21:
-    print("bust")
+    action = "bust"
+else:
+    action = "hit"
+print(action)
