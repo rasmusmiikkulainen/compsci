@@ -1,5 +1,6 @@
 integers = ["a", "b", "c"]
 
+# list comprehension would be more elegant
 for i in range(len(integers)):
     while ((n := input(f"enter {integers[i]}: ")).isnumeric() == False
            and not (n.startswith("-") and n[1:].isnumeric())
