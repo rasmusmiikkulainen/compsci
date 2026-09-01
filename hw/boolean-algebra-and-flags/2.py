@@ -1,7 +1,7 @@
 integers = [0, 0]
 
 for i in range(len(integers)):
-    while (n := input(f"integer {i + 1}: ")).isnumeric() == False or n[0] == "0":
+    while (n := input(f"integer {i + 1}: ")).isnumeric() == False or n == "0":
         print("please enter a positive integer")
     integers[i] = n
 
