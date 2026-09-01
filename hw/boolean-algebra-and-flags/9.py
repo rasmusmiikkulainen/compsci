@@ -1,4 +1,4 @@
-for i in range(1, 10000):
+for i in range(1, 10001):
     factors = []
     for n in range(1, i):
         if i % n == 0:
