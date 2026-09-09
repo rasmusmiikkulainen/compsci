@@ -6,4 +6,4 @@ while (i := int(input("enter index: "))) >= 0:
     indices.append(i)
 print("original:", words)
 print("indices:", indices)
-print("result:", [a for a in words if words.index(a) not in indices])
+print("result:", [words[a] for a in range(len(words)) if a not in indices])
