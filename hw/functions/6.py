@@ -6,12 +6,10 @@ def alternate(lst):
     alt = []
     for i in range(iter_length):
         alt.append(lst[i])
-        if i == 0:
-            alt.append(lst[-1])
-        elif i != len(lst) // 2:
+        if i != len(lst) // 2:
             alt.append(lst[-(i + 1)])
 
     return alt
 
-lst = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+lst = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]
 print(alternate(lst))
