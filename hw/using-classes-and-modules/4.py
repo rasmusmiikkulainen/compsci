@@ -1,6 +1,11 @@
 def file_type(s):
-    lastdot = - s[::-1].find(".")
-    return s[lastdot:]
+    lastdot = s[::-1].find(".")
+    if lastdot in (-1, 0):
+        out = ""
+    else:
+        out = s[-lastdot:]
+    return out
 
-print(file_type("test.txt"))
-print(file_type("another.pptx"))
+testcases = ["foo.doc", "foo.docx", "foo.bar.docx", "", "foo", "foo."]
+for a in testcases:
+    print((a, file_type(a)))
