@@ -1,8 +1,10 @@
 def dashify_substring(s, sub):
-    if sub == "":
-        return s
-    dash = "-" + sub + "-"
-    return s.replace(sub, dash, count=1)
+    if not sub:
+        out = s
+    else:
+        dash = "-" + sub + "-"
+        out = s.replace(sub, dash, count=1)
+    return out
 
 testcases = [("foo", "o"), ("foobar", "oba"), ("foobar", "f"), 
              ("foobar", "bar"), ("foobar", "cat"), ("foobar", "")]
