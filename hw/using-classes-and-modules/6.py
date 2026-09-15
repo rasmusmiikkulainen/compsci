@@ -5,6 +5,8 @@ def max_char_rep(s):
         streaks = [1]
         for i in range(1, len(s)):
             if s[i] != s[i - 1]:
+                if len(s) - i <= max(streaks):
+                    break
                 streaks.append(0)
             streaks[-1] += 1
             out = max(streaks)
