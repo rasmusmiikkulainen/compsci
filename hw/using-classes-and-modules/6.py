@@ -9,7 +9,7 @@ def max_char_rep(s):
                     break
                 streaks.append(0)
             streaks[-1] += 1
-            out = max(streaks)
+        out = max(streaks)
     return out
 
 testcases = ["abcd", "abbbcdd", "abbbcddddd", ""]
