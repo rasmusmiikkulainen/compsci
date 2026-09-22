@@ -1,0 +1,5 @@
+1.
+it checks whether a and b have some same element
+2.
+you only need a single for loop for this. the program also loops through the lists even after
+already finding a match.
