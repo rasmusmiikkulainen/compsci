@@ -1,0 +1,3 @@
+3.2
+The program prints the list indices in all possible orders without there being duplicate
+cases of the same index
